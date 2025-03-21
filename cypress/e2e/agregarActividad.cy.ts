@@ -5,7 +5,7 @@ describe('Agregar una Actividad', () => {
         cy.visit('http://localhost:4200/')
         cy.validacionInicial()
 
-        //Agregar una actividad - test A
+        //Agregar una actividad - test ABC
         cy.crearActividad()
         cy.get('[data-cy="oWTz10"]').should('have.text', 'Actividad de Prueba')
     })
